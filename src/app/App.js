@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class App extends Component {
 
   constructor() {
@@ -86,7 +87,7 @@ class App extends Component {
     }
   }
 
-  /* Editar tareas */
+  /* pedir una sola tarea para editarla enviamos como parametro el id  */
   editTask(id) {
     fetch(`/api/tasks/${id}`)
       .then(res => res.json())
@@ -115,20 +116,20 @@ class App extends Component {
 
   render() {
     return (
-      <div>
- 
-        <nav className="light-blue darken-4">
-          <div className="container">
-            <div className="nav-wrapper">
-              <a href="#" className="brand-logo">MERN Stack</a>
-            </div>
-          </div>
+      <div className='body'> 
+        <nav className="light-dark  lighten-5">        
+        <h2 class="z-depth-5 center">TodoList MERN</h2> 
         </nav>
+
+      
+        <br /><br />
+        
 
         <div className="container">
           <div className="row">
-            <div className="col s5">
+            <div className="col s12 m12">
               <div className="card">
+              <h5  class="z-depth-2 center">What is your homework?</h5>
                 <div className="card-content">
                   <form onSubmit={this.addTask}>
                     <div className="row">
@@ -142,19 +143,24 @@ class App extends Component {
                       </div>
                     </div>
 
-                    <button type="submit" className="btn light-blue darken-4">
-                      Send 
+                    <button type="submit" className="btn light-blue darken-4 btn-floating pulse h1">
+                     send
                     </button>
                   </form>
                 </div>
               </div>
             </div>
-            <div className="col s7">
+            <div className="col s12">
               <table>
                 <thead>
+                
                   <tr>
                     <th>Title</th>
                     <th>Description</th>
+                    
+                    <div>
+       
+              </div>
                   </tr>
                 </thead>
                 <tbody>
@@ -162,10 +168,13 @@ class App extends Component {
                     this.state.tasks.map(task => {
                       return (
                         <tr key={task._id}>
-                          <td>{task.title}</td>
+                       <td> <label >
+                     <input type="checkbox" name="opcional"/>
+                        <span><td>{task.title}</td></span>
+                         </label></td>                          
                           <td>{task.description}</td>
                           <td>
-                            <button onClick={() => this.deleteTask(task._id)} className="btn light-blue darken-4">
+                            <button onClick={() => this.deleteTask(task._id)} className="btn light-blue darken-1">
                               <i className="material-icons">delete</i> 
                             </button>
                             <button onClick={() => this.editTask(task._id)} className="btn light-blue darken-4" style={{margin: '4px'}}>
