@@ -118,7 +118,7 @@ class App extends Component {
     return (
       <div className='body'> 
         <nav className="light-dark  lighten-5">        
-        <h2 class="z-depth-5 center">TodoList MERN</h2> 
+        <h2 className="z-depth-5 center">TodoList MERN</h2> 
         </nav>
 
       
@@ -129,7 +129,7 @@ class App extends Component {
           <div className="row">
             <div className="col s12 m12">
               <div className="card">
-              <h5  class="z-depth-2 center">What is your homework?</h5>
+              <h5  className="z-depth-2 center">What is your homework?</h5>
                 <div className="card-content">
                   <form onSubmit={this.addTask}>
                     <div className="row">
@@ -156,12 +156,8 @@ class App extends Component {
                 
                   <tr>
                     <th>Title</th>
-                    <th>Description</th>
-                    
-                    <div>
-       
-              </div>
-                  </tr>
+                    <th>Description</th>                 
+                 </tr>
                 </thead>
                 <tbody>
                   { 
@@ -171,7 +167,7 @@ class App extends Component {
                        <td> <label >
                      <input type="checkbox" name="opcional"/>
                         <span><td>{task.title}</td></span>
-                         </label></td>                          
+                         </label></td>
                           <td>{task.description}</td>
                           <td>
                             <button onClick={() => this.deleteTask(task._id)} className="btn light-blue darken-1">
