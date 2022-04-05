@@ -10,6 +10,7 @@ The best way to manage your time is to do it with your personalized agenda, this
    * Module that allows me to see through the console the requests that arrive through the client => npm install morgan 
    * Module that allows us to connect to the database and define how the data will look inside the database  => npm install mongoose
    * Initialize mongodb => mongod     =linux=> sudo service mongod start
+   * vercel https://dev.to/hte305/deploy-express-js-app-to-vercel-38jb
 
 #  FRONTEND
   * Install React => npm install react react-dom
