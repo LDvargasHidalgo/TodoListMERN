@@ -23,6 +23,7 @@ The best way to manage your time is to do it with your personalized agenda, this
   * Express js
   * React
   * Node js
+  * Materialize
 
 ## Developer
   * Laura Daniela Vargas
