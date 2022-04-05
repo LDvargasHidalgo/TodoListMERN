@@ -1,6 +1,8 @@
 # TodoListMERN
 The best way to manage your time is to do it with your personalized agenda, this app will help you to never forget your tasks, you can add new tasks, edit your existing tasks, and delete the tasks that no longer interest you.
 
+  ![Captura de pantalla de 2022-04-05 10-57-40](https://user-images.githubusercontent.com/91891348/161796764-cb3db91c-6d00-4b1c-94d4-fccee9179ffe.png)
+
 #  BACKEND 
    * Inicializar un proyecto de nodejs => npm init --yes 
    * Instalar express (framework de nodejs) => npm install express
@@ -25,4 +27,4 @@ The best way to manage your time is to do it with your personalized agenda, this
 ## Developer
   * Laura Daniela Vargas
    
-   
+ 
