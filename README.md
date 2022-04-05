@@ -15,13 +15,14 @@ The best way to manage your time is to do it with your personalized agenda, this
   * Modulo para que webpack funcione internamente => npm i webpack-cli => ejecutar con => npm run webpack
   * Babel encargado de traducir codigo de jsx y js moderno =>  npm install --save-dev @babel/core @babel/preset-env @babel/preset-react
  
- ## Developer
-  * Laura Daniela Vargas
 
  ## Stack
   * Mongo db
   * Express js
   * React
   * Node js
+
+## Developer
+  * Laura Daniela Vargas
    
    
