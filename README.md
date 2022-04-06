@@ -25,6 +25,10 @@ The best way to manage your time is to do it with your personalized agenda, this
   * React
   * Node js
   * Materialize
+  
+
+## Deploy (heroku)
+https://todolist-mern2022.herokuapp.com/
 
 ## Developer
   * Laura Daniela Vargas
